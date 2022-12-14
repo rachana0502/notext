@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .head-cnt {
+    height: 6rem;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 3%;
+    display: flex;
+    /* top: 0;
+    position: sticky; */
+    justify-content: center;
+    border-radius: 0 0 1rem 1rem;
+}
+
+body .head-cnt h1 {
+    font-size: 3rem;
+    text-shadow: 8px 8px 16px #bebebe,
+        -8px -8px 16px #ffffff;
+}
+
+ul {
+    width: 90%;
+
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+    margin: 1rem 0.5rem;
+
+    justify-content: space-between;
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 8px 8px 16px #bebebe,
+        -8px -8px 16px #ffffff;
+}
+
+ul li p {
+    color: blueviolet;
+    font-weight: normal;
+}
+
+ul li .date {
+    color: rgb(137, 43, 226);
+    font-weight: bold;
+
+}
+
+ul li .li-left-cnt {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+body input[type="text"] {
+    position: fixed;
+    z-index: 1;
+    right: 2rem;
+    bottom: 2rem;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    outline: none;
+    border: 0px solid blueviolet;
+    border-radius: 8px;
+    transition: 1s;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 8px 8px 16px #bebebe,
+        -8px -8px 16px #ffffffff;
+}
+
+body input[type="text"]:focus {
+    border: 1px solid blueviolet;
+    width: 26rem;
+    height: 3.5rem;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 8px 8px 16px #bebebe,
+        -8px -8px 16px #ffffffff;
+}
+
+body input[type="text"]::placeholder {
+    color: blueviolet;
+    /* font-size: 2.5rem; */
+    font-size: 1rem;
+    display: flex;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    ul {
+        /* width: 90%; */
+    
+    }
+    body input[type="text"]:focus {
+
+        width: 19.5rem;
+       
+    }
+    
+  }
